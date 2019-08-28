@@ -1,3 +1,25 @@
+/*****************************************************************************/
+/* DISCIPLINA: Cálculo Numérico                                              */
+/*****************************************************************************/
+/* Arquivo: Exemplo2.c | Versão 1.0 | Ano: 2014                              */
+/*---------------------------------------------------------------------------*/
+/* Autor: Prof. Me. Lucas Kriesel Sperotto                                   */
+/*---------------------------------------------------------------------------*/
+/* E-mail: sperotto@unemat.br                                                */
+/*---------------------------------------------------------------------------*/
+/* Semestre: 5º | Curso: Ciência da Computação | UNEMAT - Aia                */
+/*---------------------------------------------------------------------------*/
+/* Descrição: Código Fonte utilizado no Exemplo 2 da Aula 1, realiza	     */
+/* sucessivos somatórios para se verificar a precisão da máquina		 	 */
+/*---------------------------------------------------------------------------*/
+/*                                                                           */
+/*    Compilador: GNU GCC Compiler - MinGW					                 */
+/*	  IDE: Code::Blocks 16.01                                                */
+/*                                                                           */
+/*****************************************************************************/
+
+
+
 /********************************************************/
 /* Código Fonte utilizado no Exemplo 2 da Aula 1 da		*/
 /* disciplina de Cálculo Numérico do Curso de Ciência	*/
@@ -17,7 +39,7 @@
 /********************/
 /* Função Principal	*/
 /********************/
-int main ()
+int main (int argc, char* argv[])
 {
     float s = 0.0, x = 0.1; /* declaração das variáveis (s) e (x) */
     int i = 0; /* declaração da variável para o laço de repetição */
