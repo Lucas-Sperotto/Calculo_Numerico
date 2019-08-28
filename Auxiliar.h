@@ -1,14 +1,22 @@
-/********************************************************/
-/* Biblioteca Auxiliar.h necessária para a codificação	*/
-/* dos algoritmos que envolvam matrizes (array - 2D) e	*/
-/* vetores (array - 1D) para a disciplina de			*/ 
-/* Cálculo Numérico do Curso de Ciência da 				*/
-/* Computação da UNEMAT de Alto Araguaia - MT			*/
-/* Autor: Prof. Me. Lucas Kriesel Sperotto				*/
-/* E-mail: sperotto@unemat.br							*/	
-/* Compilador: GNU GCC Compiler - MinGW					*/	
-/* IDE: Code::Blocks 16.01								*/			
-/********************************************************/
+/*****************************************************************************/
+/* DISCIPLINA: Cálculo Numérico                                              */
+/*****************************************************************************/
+/* Arquivo: Auxiliar.h | Versão 1.0 | Ano: 2014                              */
+/*---------------------------------------------------------------------------*/
+/* Autor: Prof. Me. Lucas Kriesel Sperotto                                   */
+/*---------------------------------------------------------------------------*/
+/* E-mail: sperotto@unemat.br                                                */
+/*---------------------------------------------------------------------------*/
+/* Semestre: 5º | Curso: Ciência da Computação | UNEMAT - Aia                */
+/*---------------------------------------------------------------------------*/
+/* Descrição: Biblioteca auxiliar necessária para a codificação dos		     */
+/* algoritmos que envolvam matrizes (array - 2D) e vetores (array - 1D) 	 */
+/*---------------------------------------------------------------------------*/
+/*                                                                           */
+/*    Compilador: GNU GCC Compiler - MinGW					                 */	
+/*	  IDE: Code::Blocks 16.01                                                */
+/*                                                                           */
+/*****************************************************************************/
 
 
 /****************************/
