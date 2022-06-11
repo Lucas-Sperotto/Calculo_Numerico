@@ -12,7 +12,7 @@
 /* Descrição: Template para o calculo dos fatores a0 e a1 do procedimento    */
 /*               de Aproximacao Linear por Minimos Quadrados Discretos       */
 /*               linear de uma funcao f(x) desconhecida a partir de uma      */
-/*				 lista de valores conhecidos da função (Y) para determinados */
+/*               lista de valores conhecidos da função (Y) para determinados */
 /*               valores de x (X).                                           */
 /*                                                                           */
 /*                      Y[i] = f(X[i]) -> i={0, ..., 9}                      */
