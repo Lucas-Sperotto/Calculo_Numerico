@@ -58,7 +58,7 @@ int main(int argc, char *argv[])
 /******************************************************************************/
 /* Função que codifica o calculo do coeficiente linear a0 - EQUAÇÃO 8.1       */
 /* ENTRADA: m - inteiro, valor do numero de ponto a ser usado na aproximação  */
-/* SAIDA: double, valor do coeficiente a0 calculado com base no numero       */
+/* SAIDA: double, valor do coeficiente a0 calculado com base no numero        */
 /* de pontos (m), valor das coordenadas x (X[]) e o valor que a função assume */
 /* em cada coordenada (Y[]).                                                  */
 /******************************************************************************/
@@ -70,7 +70,7 @@ double get_a0(int m)
 /******************************************************************************/
 /* Função que codifica o calculo do coeficiente linear a0 - EQUAÇÃO 8.2       */
 /* ENTRADA: m - inteiro, valor do numero de ponto a ser usado na aproximação  */
-/* SAIDA: double, valor do coeficiente a1 calculado com base no numero       */
+/* SAIDA: double, valor do coeficiente a1 calculado com base no numero        */
 /* de pontos (m), valor das coordenadas x (X[]) e o valor que a função assume */
 /* em cada coordenada (Y[]).                                                  */
 /******************************************************************************/
