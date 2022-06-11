@@ -10,9 +10,10 @@
 /* Semestre: 5º | Curso: Ciência da Computação | UNEMAT - Aia                */
 /*---------------------------------------------------------------------------*/
 /* Descrição: Template para o calculo dos fatores a0 e a1 do procedimento    */
-/*               de aproximacao linear de uma funcao f(x) desconhecida       */
-/*				 a partir de uma lista de valores conhecidos da função (Y)   */
-/*               para determinados valores de x (X).                         */
+/*               de Aproximacao Linear por Minimos Quadrados Discretos       */
+/*               linear de uma funcao f(x) desconhecida a partir de uma      */
+/*				 lista de valores conhecidos da função (Y) para determinados */
+/*               valores de x (X).                                           */
 /*                                                                           */
 /*                      Y[i] = f(X[i]) -> i={0, ..., 9}                      */
 /*                                                                           */
@@ -66,8 +67,8 @@ double get_a0(int m)
     //insira seu código aqui...
 }
 
-/************************************************************************/
-/* Função que codifica o calculo do coeficiente linear a0 - EQUAÇÃO 8.2 */
+/******************************************************************************/
+/* Função que codifica o calculo do coeficiente linear a0 - EQUAÇÃO 8.2       */
 /* ENTRADA: m - inteiro, valor do numero de ponto a ser usado na aproximação  */
 /* SAIDA: doubele, valor do coeficiente a1 calculado com base no numero       */
 /* de pontos (m), valor das coordenadas x (X[]) e o valor que a função assume */
