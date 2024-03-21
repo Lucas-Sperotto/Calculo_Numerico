@@ -1,16 +1,16 @@
 /*****************************************************************************/
-/* DISCIPLINA: Cálculo Numérico                                              */
+/* DISCIPLINA: CÃ¡lculo NumÃ©rico                                             */
 /*****************************************************************************/
-/* Arquivo: Exemplo2.c | Versão 1.0 | Ano: 2014                              */
+/* Arquivo: Exemplo2.c | Versï¿½o 1.0 | Ano: 2014                             */
 /*---------------------------------------------------------------------------*/
 /* Autor: Prof. Me. Lucas Kriesel Sperotto                                   */
 /*---------------------------------------------------------------------------*/
 /* E-mail: sperotto@unemat.br                                                */
 /*---------------------------------------------------------------------------*/
-/* Semestre: 5º | Curso: Ciência da Computação | UNEMAT - Aia                */
+/* Semestre: 5ï¿½ | Curso: Ciï¿½ncia da Computaï¿½ï¿½o | UNEMAT - Aia             */
 /*---------------------------------------------------------------------------*/
-/* Descrição: Código Fonte utilizado no Exemplo 2 da Aula 1, realiza	     */
-/* sucessivos somatórios para se verificar a precisão da máquina		 	 */
+/* DescriÃ§Ã£o: CÃ³digo Fonte utilizado no Exemplo 2 da Aula 1, realiza	   */
+/* sucessivos somatÃ³rios para se verificar a precisÃ£o da mÃ¡quina		   */
 /*---------------------------------------------------------------------------*/
 /*                                                                           */
 /*    Compilador: GNU GCC Compiler - MinGW					                 */
@@ -21,9 +21,9 @@
 
 
 /********************************************************/
-/* Código Fonte utilizado no Exemplo 2 da Aula 1 da		*/
-/* disciplina de Cálculo Numérico do Curso de Ciência	*/
-/* da Computação da UNEMAT de Alto Araguaia - MT		*/
+/* Cï¿½digo Fonte utilizado no Exemplo 2 da Aula 1 da		*/
+/* disciplina de Cï¿½lculo Numï¿½rico do Curso de Ciï¿½ncia	*/
+/* da Computaï¿½ï¿½o da UNEMAT de Alto Araguaia - MT		*/
 /* Autor: Prof. Me. Lucas Kriesel Sperotto				*/
 /* E-mail: sperotto@unemat.br							*/
 /* Compilador: GNU GCC Compiler - MinGW					*/
@@ -32,25 +32,25 @@
 
 
 /****************************/
-/* Inclusão de bibliotecas	*/
+/* Inclusï¿½o de bibliotecas	*/
 /****************************/
 #include <stdio.h>
 
-/********************/
-/* Função Principal	*/
-/********************/
+/**********************/
+/* Funï¿½ï¿½o Principal	*/
+/**********************/
 int main (int argc, char* argv[])
 {
-    float s = 0.0, x = 0.1; /* declaração das variáveis (s) e (x) */
-    int i = 0; /* declaração da variável para o laço de repetição */
-    int MAX = 30000; /* declaração de varável para armazenar o número máximo de iterações */
+    float s = 0.0, x = 0.1; /* declaraï¿½ï¿½o das variï¿½veis (s) e (x) */
+    int i = 0; /* declaraï¿½ï¿½o da variï¿½vel para o laï¿½o de repetiï¿½ï¿½o */
+    int MAX = 30000; /* declaraï¿½ï¿½o de varï¿½vel para armazenar o nï¿½mero mï¿½ximo de iteraï¿½ï¿½es */
 
-    for(i = 1; i <= MAX; i++) /* laço de repetição de 1 até o valor da variável (MAX) */
+    for(i = 1; i <= MAX; i++) /* laï¿½o de repetiï¿½ï¿½o de 1 atï¿½ o valor da variï¿½vel (MAX) */
     {
-        s = s + x; /* atribui a variável (s) o valor existente em (s) antes da atribuição somado com o valor de (x) */
+        s = s + x; /* atribui a variï¿½vel (s) o valor existente em (s) antes da atribuiï¿½ï¿½o somado com o valor de (x) */
     }
 
-    printf("Soma = %Lf\n ", s); /* imprime o valor da variável (s) após as MAX operações de soma */
+    printf("Soma = %Lf\n ", s); /* imprime o valor da variï¿½vel (s) apï¿½s as MAX operaï¿½ï¿½es de soma */
 
-    return 0; /* encerra execução */
+    return 0; /* encerra execuï¿½ï¿½o */
 }
