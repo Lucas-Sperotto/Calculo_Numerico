@@ -1,14 +1,14 @@
 /*****************************************************************************/
-/* DISCIPLINA: Cálculo Numérico                                              */
+/* DISCIPLINA: Cï¿½lculo Numï¿½rico                                              */
 /*****************************************************************************/
-/* Arquivo: Template_Linear_Solve_Direct.cpp | Versão 1.0 | Ano: 2014        */
+/* Arquivo: Template_Linear_Solve_Direct.cpp | Versï¿½o 1.0 | Ano: 2014        */
 /*---------------------------------------------------------------------------*/
 /* Autor: Prof. Me. Lucas Kriesel Sperotto                                   */
 /*---------------------------------------------------------------------------*/
-/* Semestre: 5º | Curso: Ciência da Computação | UNEMAT - Aia                */
+/* Semestre: 5ï¿½ | Curso: Ciï¿½ncia da Computaï¿½ï¿½o | UNEMAT - Aia                */
 /*---------------------------------------------------------------------------*/
-/* Descrição: Template para a codificação dos métodos diretos de resolução   */
-/*               resolução de sistemas de equações lineares                  */
+/* Descriï¿½ï¿½o: Template para a codificaï¿½ï¿½o dos mï¿½todos diretos de resoluï¿½ï¿½o   */
+/*               resoluï¿½ï¿½o de sistemas de equaï¿½ï¿½es lineares                  */
 /*---------------------------------------------------------------------------*/
 /*                                                                           */
 /*                                                                           */
@@ -18,18 +18,18 @@
 
 #include "Auxiliar.h"
 
-void solve_GSR(int, double **, double *); /* Função que codifica o método de Gauss com Substituição Regressiva - ALGORITMO 6.1 */
-void solve_GPP(int, double **, double *); /* Função que codifica o método de Gauss com Pivotamento Parcial - ALGORITMO 6.2 */
-void solve_GPPE(int, double **, double *); /* Função que codifica o método de Gauss com Pivotamento Parcial com Escala - ALGORITMO 6.3 */
-void solve_LU(int, double **, double *); /* Função que codifica o método de Fatoração LU - ALGORITMO 6.4 */
-void solve_CHKY(int, double **, double *); /* Função que codifica o método de Fatoração Cholesky - ALGORITMO 6.6 */
+void solve_GSR(int, double **, double *); /* Funï¿½ï¿½o que codifica o mï¿½todo de Gauss com Substituiï¿½ï¿½o Regressiva - ALGORITMO 6.1 */
+void solve_GPP(int, double **, double *); /* Funï¿½ï¿½o que codifica o mï¿½todo de Gauss com Pivotamento Parcial - ALGORITMO 6.2 */
+void solve_GPPE(int, double **, double *); /* Funï¿½ï¿½o que codifica o mï¿½todo de Gauss com Pivotamento Parcial com Escala - ALGORITMO 6.3 */
+void solve_LU(int, double **, double *); /* Funï¿½ï¿½o que codifica o mï¿½todo de Fatoraï¿½ï¿½o LU - ALGORITMO 6.4 */
+void solve_CHKY(int, double **, double *); /* Funï¿½ï¿½o que codifica o mï¿½todo de Fatoraï¿½ï¿½o Cholesky - ALGORITMO 6.6 */
 
 int main(int argc, char *argv[])
 {
     unsigned int size = 3;
     double *Vet; /*Cria o ponteiro para o array */
 
-    Vet = (double *)aloca_array(size); /* Chama função que aloca memória para o vetor */
+    Vet = (double *)aloca_array(size); /* Chama funï¿½ï¿½o que aloca memï¿½ria para o vetor */
 
     init_array(Vet, size);
     print_array(Vet, size);
@@ -39,7 +39,7 @@ int main(int argc, char *argv[])
 
     Col = (Lin + 1);
 
-    Mat = (double **)aloca_array(Lin, Col); /* Chama função que aloca memória para a Matriz */
+    Mat = (double **)aloca_array(Lin, Col); /* Chama funï¿½ï¿½o que aloca memï¿½ria para a Matriz */
 
     init_array(Mat, Lin, Col);
 
@@ -54,14 +54,14 @@ int main(int argc, char *argv[])
     print_array(Mat, Lin, Col);
 
     printf("\nSolving GSR.........\n ");
-    solve_GSR(Lin, Mat,Vet);
+    solve_GSR(Lin, Mat, Vet);
     print_array(Vet, size);
     init_array(Vet, size);
     printf("\nGSR Complete\n");
 
 
     printf("\nSolving GPP.........\n ");
-    solve_GPP(Lin, Mat,Vet);
+    solve_GPP(Lin, Mat, Vet);
     print_array(Vet, size);
     init_array(Vet, size);
     printf("\nGPP Complete\n");
@@ -93,27 +93,27 @@ int main(int argc, char *argv[])
     return 0;
 }
 
-/* Função que codifica o método de Gauss com Substituição Regressiva - ALGORITMO 6.1 */
+/* Funï¿½ï¿½o que codifica o mï¿½todo de Gauss com Substituiï¿½ï¿½o Regressiva - ALGORITMO 6.1 */
 void solve_GSR(int n, double **a, double *x)
 {
 
 }
-/* Função que codifica o método de Gauss com Pivotamento Parcial - ALGORITMO 6.2 */
+/* Funï¿½ï¿½o que codifica o mï¿½todo de Gauss com Pivotamento Parcial - ALGORITMO 6.2 */
 void solve_GPP(int n, double **a, double *x)
 {
 
 }
-/* Função que codifica o método de Gauss com Pivotamento Parcial com Escala - ALGORITMO 6.3 */
+/* Funï¿½ï¿½o que codifica o mï¿½todo de Gauss com Pivotamento Parcial com Escala - ALGORITMO 6.3 */
 void solve_GPPE(int n, double **a, double *x)
 {
 
 }
-/* Função que codifica o método de Fatoração LU - ALGORITMO 6.4 */
+/* Funï¿½ï¿½o que codifica o mï¿½todo de Fatoraï¿½ï¿½o LU - ALGORITMO 6.4 */
 void solve_LU(int n, double **a, double *x)
 {
 
 }
-/* Função que codifica o método de Fatoração Cholesky - ALGORITMO 6.6 */
+/* Funï¿½ï¿½o que codifica o mï¿½todo de Fatoraï¿½ï¿½o Cholesky - ALGORITMO 6.6 */
 void solve_CHKY(int n, double **a, double *x)
 {
 

@@ -123,7 +123,7 @@ double df(double x)
 /***************************************************************/
 double bissecccao(double a, double b, double TOL, int N0)
 {
-double p, p_ant, FA, FP;
+    double p, p_ant, FA, FP;
     int i;
 
     i = 1;
@@ -138,7 +138,7 @@ double p, p_ant, FA, FP;
         if((absolute(p - p_ant) / absolute(p)) < TOL)
         {
             printf("Solução: %.9lf\tcom N: %d Iterações\n", p, i);
-            printf("f(x): %E\tcom Erro: %E \n", f(p), ((p - 1.44741427129624) / 1.44741427129624) * 100);
+            //printf("f(x): %E\tcom Erro: %E \n", f(p), ((p - 1.44741427129624) / 1.44741427129624) * 100);
             return p;
         }
         // printf("Solução:\t%lf\tN:\t%d\n", p, i);
@@ -167,7 +167,7 @@ double p, p_ant, FA, FP;
 /***************************************************************/
 double pontofixo(double p0, double TOL, int N0)
 {
-double p, q, q0, q1;
+    double p, q, q0, q1;
     int i;
 
     i = 1;
@@ -179,13 +179,14 @@ double p, q, q0, q1;
         if(absolute(p - p0) < TOL)
         {
             printf("Solução: %.9lf\tcom N: %d Iterações\n", p, i);
-            printf("f(x): %E\tcom Erro: %E \n", f(p), ((p - 1.44741427129624) / 1.44741427129624) * 100);
+            //printf("f(x): %E\tcom Erro: %E \n", f(p), ((p - 1.44741427129624) / 1.44741427129624) * 100);
             return p;
         }
         i = i + 1;
         p0 = p;
     }
     printf("O método falhou para %d iterações\n", N0);
+
     return 0.0;
 }
 
@@ -196,7 +197,7 @@ double p, q, q0, q1;
 /************************************************************/
 double newton(double p0, double TOL, int N0)
 {
- double p, q, q0, q1;
+    double p, q, q0, q1;
     int i;
 
     i = 1;
@@ -208,13 +209,14 @@ double newton(double p0, double TOL, int N0)
         if(absolute(p - p0) < TOL)
         {
             printf("Solução: %.9lf\tcom N: %d Iterações\n", p, i);
-            printf("f(x): %E\tcom Erro: %E \n", f(p), ((p - 1.44741427129624) / 1.44741427129624) * 100);
+            //printf("f(x): %E\tcom Erro: %E \n", f(p), ((p - 1.44741427129624) / 1.44741427129624) * 100);
             return p;
         }
         i = i + 1;
         p0 = p;
     }
     printf("O método falhou para %d iterações\n", N0);
+
     return 0.0;
 }
 
@@ -225,7 +227,7 @@ double newton(double p0, double TOL, int N0)
 /************************************************************/
 double secante(double p0, double p1, double TOL, int N0)
 {
-double p, q, q0, q1;
+    double p, q, q0, q1;
     int i;
 
     i = 2;
@@ -238,7 +240,7 @@ double p, q, q0, q1;
         if(absolute(p - p1) < TOL)
         {
             printf("Solução: %.9lf\tcom N: %d Iterações\n", p, i);
-            printf("f(x): %E\tcom Erro: %E \n", f(p), ((p - 1.44741427129624) / 1.44741427129624) * 100);
+            //printf("f(x): %E\tcom Erro: %E \n", f(p), ((p - 1.44741427129624) / 1.44741427129624) * 100);
             return p;
         }
         i = i + 1;
@@ -250,6 +252,7 @@ double p, q, q0, q1;
     }
 
     printf("O método falhou para %d iterações\n", N0);
+
     return 0.0;
 }
 
@@ -260,7 +263,7 @@ double p, q, q0, q1;
 /*******************************************************************/
 double falsaposicao(double p0, double p1, double TOL, int N0)
 {
-double p, q, q0, q1;
+    double p, q, q0, q1;
     int i;
 
     i = 2;
@@ -274,7 +277,7 @@ double p, q, q0, q1;
         if(absolute(p - p1) < TOL)
         {
             printf("Solução: %.9lf\tcom N: %d Iterações\n", p, i);
-            printf("f(x): %E\tcom Erro: %E Iterações\n", f(p), ((p - 1.44741427129624) / 1.44741427129624) * 100);
+            //printf("f(x): %E\tcom Erro: %E Iterações\n", f(p), ((p - 1.44741427129624) / 1.44741427129624) * 100);
             return p;
         }
         i = i + 1;
@@ -291,5 +294,6 @@ double p, q, q0, q1;
     }
 
     printf("O método falhou para %d iterações\n", N0);
+
     return 0.0;
 }
