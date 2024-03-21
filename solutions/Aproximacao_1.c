@@ -9,7 +9,7 @@
 /*---------------------------------------------------------------------------*/
 /* Semestre: 5º | Curso: Ciência da Computação | UNEMAT - Aia                */
 /*---------------------------------------------------------------------------*/
-/* Descrição: Template para o calculo dos fatores a0 e a1 do procedimento    */
+/* Descrição: Solução para o calculo dos fatores a0 e a1 do procedimento     */
 /*               de Aproximacao Linear por Minimos Quadrados Discretos       */
 /*               linear de uma funcao f(x) desconhecida a partir de uma      */
 /*               lista de valores conhecidos da função (Y) para determinados */
