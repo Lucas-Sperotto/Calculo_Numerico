@@ -28,7 +28,7 @@
 /****************************/
 /* Inclusão de bibliotecas  */
 /****************************/
-#include "Auxiliar.h"
+#include "..\lib\Auxiliar.h"
 
 /************************************************/
 /* Definição do protótipo das funções globais   */

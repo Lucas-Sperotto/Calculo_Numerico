@@ -123,7 +123,7 @@ void solve_GSR(int n, double **a, double *x)
     int i = 0, p = 0, j = 0, k = 0;
     double m = 0.0;
 
-    for (i = 0; i < (n ); i++)
+    for (i = 0; i < n; i++)
     {
         for(p = i; p < n; p++)
         {
@@ -230,7 +230,7 @@ void solve_GPP(int n, double **a, double *x)
         {
             int NCOPIA = NLINHA[i];
             NLINHA[i] = NLINHA[p];
-            NLINHA[p]= NCOPIA;
+            NLINHA[p] = NCOPIA;
         }
         for(j = i + 1; j < n; j++)
         {
@@ -247,7 +247,7 @@ void solve_GPP(int n, double **a, double *x)
         printf("Não existe solução unica\n");
         exit(3);
     }
-    x[n] = a[NLINHA[n]][n+1] / a[NLINHA[n]][n];
+    x[n] = a[NLINHA[n]][n + 1] / a[NLINHA[n]][n];
 
     for(int i = n - 2; i >= 0; i--)
     {
@@ -304,16 +304,16 @@ void solve_GPPE(int n, double **a, double *x)
         {
             for(j = i; j < n - 1; j++)
             {
-                if(mod(a[NLINHA[j]][i])/s[NLINHA[j]] > mod(a[NLINHA[j + 1]][i])/s[NLINHA[j + 1]])
+                if(mod(a[NLINHA[j]][i]) / s[NLINHA[j]] > mod(a[NLINHA[j + 1]][i]) / s[NLINHA[j + 1]])
                 {
-                    maior = mod(a[NLINHA[j]][i])/s[NLINHA[j]];
+                    maior = mod(a[NLINHA[j]][i]) / s[NLINHA[j]];
                 }
                 else
                 {
-                    maior = mod(a[NLINHA[j + 1]][i])/s[NLINHA[j + 1]];
+                    maior = mod(a[NLINHA[j + 1]][i]) / s[NLINHA[j + 1]];
                 }
             }
-            if (mod(a[NLINHA[p]][i])/s[NLINHA[p]] == maior)
+            if (mod(a[NLINHA[p]][i]) / s[NLINHA[p]] == maior)
             {
                 break;
             }
@@ -330,7 +330,7 @@ void solve_GPPE(int n, double **a, double *x)
         {
             int NCOPIA = NLINHA[i];
             NLINHA[i] = NLINHA[p];
-            NLINHA[p]= NCOPIA;
+            NLINHA[p] = NCOPIA;
         }
         for(j = i + 1; j < n; j++)
         {
@@ -347,7 +347,7 @@ void solve_GPPE(int n, double **a, double *x)
         printf("Não existe solução unica\n");
         exit(3);
     }
-    x[n] = a[NLINHA[n]][n+1] / a[NLINHA[n]][n];
+    x[n] = a[NLINHA[n]][n + 1] / a[NLINHA[n]][n];
 
     for(int i = n - 2; i >= 0; i--)
     {
@@ -369,7 +369,33 @@ void solve_GPPE(int n, double **a, double *x)
 /******************************************************************************/
 void solve_LU(int n, double **a, double *x)
 {
+    double **l;
+    double **u;
 
+    l[0][0] = 1.0;
+    u[0][0] = a[0][0];
+
+    for(int j = 1; j < n; j++)
+    {
+        u[1][j] = a[1][j] / l[1][1];
+        l[j][1] = a[j][1] / u[1][1];
+    }
+    for(int i = 1; i < n - 1; i++)
+    {
+        double soma1 = 0.0;
+        for(int k = 1; k < i - 1; k++)
+        {
+            soma1 = soma1 + l[i][k] * u[k][i];
+        }
+        l[i][i] = 1.0;
+        u[i][i] = a[i][i] - (soma1);
+
+    for(int j = i + 1; j < n; j++)
+        {
+            u[i][j] = (1.0 / l[i][j]) * (a[i][j] - soma2);
+            l[i][j] = (1.0 / u[i][j]) * (a[i][j] - soma3);
+        }
+    }
 }
 
 /******************************************************************************/
