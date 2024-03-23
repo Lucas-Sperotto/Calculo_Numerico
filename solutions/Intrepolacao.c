@@ -51,7 +51,7 @@ double P(int, double); /* Fun��o que codifica o c�lculo valor do polin�m
 /**********************/
 int main(int argc, char *argv[])
 {
-    printf("Interpola��o de %d �: %lf\n", 1965, P(5,1965));
+    printf("Interpola��o de %d �: %lf\n", 1965, P(5, 1965));
     return 0;
 }
 
@@ -67,14 +67,14 @@ double L(int n, int k, double x)
     double l = 1.0;
     int i;
 
-    for(i = 0; i<=n; i++)
+    for(i = 0; i <= n; i++)
     {
         if (i != k)
         {
-            l =  l * ((x - X[i])/(X[k] - X[i]));
+            l =  l * ((x - X[i]) / (X[k] - X[i]));
         }
     }
-    printf("L(%d,%d,%lf): %lf\n",n,k,x,l);
+    printf("L(%d,%d,%lf): %lf\n", n, k, x, l);
     return l;
 }
 
@@ -90,9 +90,9 @@ double P(int n, double x)
     double p = 0.0;
     int k;
 
-    for(k = 0; k<=n; k++)
+    for(k = 0; k <= n; k++)
     {
-        p = p + F[k] * L(n,k,x);
+        p = p + F[k] * L(n, k, x);
     }
     return p;
 }

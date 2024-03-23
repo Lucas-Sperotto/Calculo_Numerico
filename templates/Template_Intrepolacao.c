@@ -51,7 +51,7 @@ double P(int, double); /* Fun��o que codifica o c�lculo valor do polin�m
 /**********************/
 int main(int argc, char *argv[])
 {
-    printf("Interpola��o de %d �: %lf\n", 1965, P(5,1965));
+    printf("Interpola��o de %d �: %lf\n", 1965, P(5, 1965));
     return 0;
 }
 
