@@ -1,14 +1,14 @@
 /*****************************************************************************/
-/* DISCIPLINA: Cálculo Numérico                                              */
+/* DISCIPLINA: Cï¿½lculo Numï¿½rico                                             */
 /*****************************************************************************/
-/* Arquivo: Template_Derivacao.c | Versão 1.0 | Ano: 2014                    */
+/* Arquivo: Template_Derivacao.c | Versï¿½o 1.0 | Ano: 2014                    */
 /*---------------------------------------------------------------------------*/
 /* Autor: Prof. Me. Lucas Kriesel Sperotto                                   */
 /*---------------------------------------------------------------------------*/
-/* Semestre: 5º | Curso: Ciência da Computação | UNEMAT - Aia                */
+/* Semestre: 5ï¿½ | Curso: Ciï¿½ncia da Computaï¿½ï¿½o | UNEMAT - Aia             */
 /*---------------------------------------------------------------------------*/
-/* Descrição: Template para a das fórmulas abertas e fechadas de             */
-/*               Newton-Cotes para a Integração Numérica de uma função       */
+/* Descriï¿½ï¿½o: Template para a das fï¿½rmulas abertas e fechadas de           */
+/*               Newton-Cotes para a Integraï¿½ï¿½o Numï¿½rica de uma funï¿½ï¿½o   */
 /*---------------------------------------------------------------------------*/
 /*                                                                           */
 /*                                                                           */
@@ -21,12 +21,12 @@
 double X[]={1.1, 1.2, 1.3, 1.4};
 double F[]={9.025013, 11.02318, 13.46374, 16.44465};
 
-double derivProg(double); //Equação 4.1 com h positivo
-double derivReg(double); //Equação 4.1 com h negativo
-double deriv3(double); //Equação 4.4
-double deriv3Centred(double); //Equação 4.5
-double deriv5(double); //Equação 4.7
-double deriv5Centred(double); // Equação 4.6
+double derivProg(double); //Equaï¿½ï¿½o 4.1 com h positivo
+double derivReg(double); //Equaï¿½ï¿½o 4.1 com h negativo
+double deriv3(double); //Equaï¿½ï¿½o 4.4
+double deriv3Centred(double); //Equaï¿½ï¿½o 4.5
+double deriv5(double); //Equaï¿½ï¿½o 4.7
+double deriv5Centred(double); // Equaï¿½ï¿½o 4.6
 
 
 int main()
